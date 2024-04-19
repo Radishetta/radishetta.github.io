@@ -1,0 +1,77 @@
+body {
+  background-color: lightcyan;
+  font-size: 1.3rem;
+}
+#otto-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 700px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px solid black;
+  padding: 20px 50px 50px 75px;
+}
+#my-profile {
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+h1,
+h2,
+h3 {
+  font-family: monospace;
+}
+h1 {
+  text-align: center;
+}
+
+a {
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: cadetblue;
+}
+
+ul,
+ol {
+  color: blueviolet;
+}
+
+/* .grid-container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+.i-like {
+  grid-area: 2/2/4/2;
+}
+.dont-like {
+  grid-area: 2/4/2/4;
+}
+.intro-grid {
+  text-align: center;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.i-like {
+  grid-area: 2 / 1 / 4 / 3;
+  text-align: left;
+}
+.intro-grid {
+  grid-area: 1 / 1 / 2 / 5;
+  text-align: center;
+}
+.dont-like {
+  grid-area: 2 / 3 / 4 / 5;
+  text-align: left;
+}
